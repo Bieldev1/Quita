@@ -123,7 +123,7 @@
         <!-- ── Ações ───────────────────────────────────────────────────── -->
         <footer class="resultado-card__actions">
           <a
-            href="https://www.gov.br/fazenda/desenrola"
+            href="https://desenrola.gov.br"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn--primary btn--lg"
