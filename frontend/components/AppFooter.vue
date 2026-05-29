@@ -8,7 +8,7 @@
           <span class="footer__logo-symbol" aria-hidden="true">✦</span>
           <span class="footer__logo-name">Quita</span>
         </div>
-        <p class="footer__tagline">Simule grátis. Negocie com segurança.</p>
+        <p class="footer__tagline">Simule grátis. Negocie com segurança 💚</p>
       </div>
 
       <!-- Links discretos -->

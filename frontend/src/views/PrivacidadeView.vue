@@ -17,7 +17,6 @@
         <!-- 1. O que coletamos -->
         <section class="privacy-section" aria-labelledby="sec-coleta">
           <h2 id="sec-coleta" class="heading-2 privacy-section__title">
-            <span class="privacy-section__icon" aria-hidden="true">🔒</span>
             O que coletamos
           </h2>
           <p class="body-base">
@@ -31,7 +30,6 @@
         <!-- 2. Cookies e anúncios -->
         <section class="privacy-section" aria-labelledby="sec-cookies">
           <h2 id="sec-cookies" class="heading-2 privacy-section__title">
-            <span class="privacy-section__icon" aria-hidden="true">🍪</span>
             Cookies e anúncios
           </h2>
           <p class="body-base">
@@ -54,7 +52,6 @@
         <!-- 3. Links de afiliados -->
         <section class="privacy-section" aria-labelledby="sec-afiliados">
           <h2 id="sec-afiliados" class="heading-2 privacy-section__title">
-            <span class="privacy-section__icon" aria-hidden="true">🤝</span>
             Links de afiliados
           </h2>
           <p class="body-base">
@@ -71,17 +68,16 @@
         <!-- 4. Contato -->
         <section class="privacy-section" aria-labelledby="sec-contato">
           <h2 id="sec-contato" class="heading-2 privacy-section__title">
-            <span class="privacy-section__icon" aria-hidden="true">✉️</span>
             Contato
           </h2>
           <p class="body-base">
             Dúvidas sobre esta política ou sobre o funcionamento do Quita? Entre em contato:
           </p>
           <a
-            href="mailto:contato@quita.vercel.app"
+            href="mailto:contato.gletech@gmail.com"
             class="privacy-link privacy-link--email"
           >
-            contato@quita.vercel.app
+            contato.gletech@gmail.com
           </a>
         </section>
 
@@ -158,11 +154,6 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
-}
-
-.privacy-section__icon {
-  font-size: var(--text-lg);
-  line-height: 1;
 }
 
 /* Parágrafos com espaçamento entre si */

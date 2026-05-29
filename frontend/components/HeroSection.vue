@@ -27,7 +27,7 @@
         <!-- Subtítulo -->
         <p class="body-lg text-secondary hero__subtitle animate animate--3">
           Simule gratuitamente sua renegociação pelo Desenrola Brasil.
-          Sem cadastro, sem compromisso. Resultado em segundos.
+          Sem cadastro, sem compromisso. Resultado em segundos ⚡
         </p>
 
         <!-- CTAs -->

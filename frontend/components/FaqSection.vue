@@ -69,11 +69,11 @@ import { ref } from 'vue'
 const perguntas = [
   {
     pergunta: 'O Quita é gratuito?',
-    resposta:  'Sim, 100%. Não cobramos nada para simular. Monetizamos de forma transparente com parcerias e anúncios.',
+    resposta:  'Sim, 100% 😊 Não cobramos nada para simular. Monetizamos de forma transparente com parcerias e anúncios.',
   },
   {
     pergunta: 'Preciso me cadastrar?',
-    resposta:  'Não. Nenhum dado pessoal é coletado. A simulação é anônima.',
+    resposta:  'Não precisa de nada. Nenhum dado pessoal é coletado — a simulação é completamente anônima 🔒',
   },
   {
     pergunta: 'Os valores são exatos?',
@@ -81,7 +81,7 @@ const perguntas = [
   },
   {
     pergunta: 'Posso usar o FGTS?',
-    resposta:  'Sim. O Novo Desenrola permite usar até 20% do saldo do FGTS ou R$ 1.000 (o que for maior) para abater a dívida.',
+    resposta:  'Sim! O Novo Desenrola permite usar até 20% do saldo do FGTS ou R$ 1.000 (o que for maior) para abater a dívida.',
   },
   {
     pergunta: 'Quem pode usar o Desenrola?',
@@ -89,7 +89,7 @@ const perguntas = [
   },
   {
     pergunta: 'Como negocie depois da simulação?',
-    resposta:  'Procure diretamente seu banco ou acesse o portal oficial do governo em gov.br/fazenda/desenrola.',
+    resposta:  'Procure diretamente seu banco ou acesse o portal oficial do governo em gov.br/fazenda/desenrola 👇',
   },
 ]
 
