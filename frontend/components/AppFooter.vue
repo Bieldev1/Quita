@@ -13,7 +13,7 @@
 
       <!-- Links discretos -->
       <nav class="footer__nav" aria-label="Links do rodapé">
-        <a class="footer__link" href="#privacidade">Privacidade</a>
+        <RouterLink class="footer__link" to="/privacidade">Privacidade</RouterLink>
         <span class="footer__separator" aria-hidden="true">·</span>
         <a class="footer__link" href="#como-funciona">Como funciona</a>
       </nav>
