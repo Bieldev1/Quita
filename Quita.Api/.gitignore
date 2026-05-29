@@ -1,0 +1,14 @@
+# ── Build artifacts ───────────────────────────────────────────────────────────
+bin/
+obj/
+out/
+
+# ── Segredos e ambiente local ─────────────────────────────────────────────────
+appsettings.Development.json
+appsettings.Local.json
+*.user
+secrets.json
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vs/
+*.suo
