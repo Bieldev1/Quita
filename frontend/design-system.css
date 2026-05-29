@@ -186,59 +186,6 @@
 
 
   /* ----------------------------------------------------------
-     2.4 PALETA SEMÂNTICA — TEMA ESCURO
-     ---------------------------------------------------------- */
-
-  [data-theme="dark"] {
-    /* Superfície */
-    --color-bg:            var(--neutral-900);
-    --color-bg-subtle:     var(--neutral-800);
-    --color-bg-elevated:   var(--neutral-800);
-    --color-border:        var(--neutral-700);
-    --color-border-strong: var(--neutral-600);
-
-    /* Texto */
-    --color-text-primary:   var(--neutral-50);
-    --color-text-secondary: var(--neutral-400);
-    --color-text-tertiary:  var(--neutral-500);
-    --color-text-inverse:   var(--neutral-950);
-    --color-text-on-primary:var(--neutral-950);
-
-    /* Marca primária (teal — mais brilhante no escuro) */
-    --color-primary:         var(--teal-400);
-    --color-primary-hover:   var(--teal-300);
-    --color-primary-active:  var(--teal-200);
-    --color-primary-subtle:  rgba(31, 158, 134, 0.12);
-    --color-primary-muted:   rgba(31, 158, 134, 0.2);
-    --color-primary-border:  rgba(31, 158, 134, 0.35);
-    --color-primary-text:    var(--teal-300);
-
-    /* Marca secundária (âmbar) */
-    --color-secondary:        var(--amber-300);
-    --color-secondary-hover:  var(--amber-200);
-    --color-secondary-active: var(--amber-100);
-    --color-secondary-subtle: rgba(255, 176, 26, 0.1);
-    --color-secondary-muted:  rgba(255, 176, 26, 0.18);
-    --color-secondary-border: rgba(255, 176, 26, 0.3);
-    --color-secondary-text:   var(--amber-300);
-
-    /* Feedback */
-    --color-success:      var(--green-400);
-    --color-success-bg:   rgba(34, 197, 94, 0.12);
-    --color-success-text: var(--green-400);
-    --color-error:        var(--red-400);
-    --color-error-bg:     rgba(239, 68, 68, 0.12);
-    --color-error-text:   var(--red-400);
-    --color-info:         var(--blue-400);
-    --color-info-bg:      rgba(59, 130, 246, 0.12);
-    --color-info-text:    var(--blue-400);
-
-    /* Foco */
-    --color-focus-ring: var(--teal-300);
-  }
-
-
-  /* ----------------------------------------------------------
      2.5 ESPAÇAMENTO
      Base 4px — escala consistente
      ---------------------------------------------------------- */
@@ -614,11 +561,6 @@ a:hover { color: var(--color-primary-hover); }
   box-shadow: none;
 }
 
-[data-theme="dark"] .btn--primary:disabled {
-  background-color: var(--neutral-700);
-  border-color: var(--neutral-700);
-  color: var(--neutral-500);
-}
 
 
 /* ----------------------------------------------------------
@@ -655,17 +597,6 @@ a:hover { color: var(--color-primary-hover); }
   cursor: not-allowed;
 }
 
-[data-theme="dark"] .btn--secondary {
-  background-color: var(--color-primary-subtle);
-  border-color: var(--color-primary-border);
-  color: var(--color-primary);
-}
-
-[data-theme="dark"] .btn--secondary:disabled {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: var(--neutral-700);
-  color: var(--neutral-600);
-}
 
 
 /* ----------------------------------------------------------
@@ -684,9 +615,6 @@ a:hover { color: var(--color-primary-hover); }
   color: var(--color-text-primary);
 }
 
-[data-theme="dark"] .btn--ghost:hover:not(:disabled) {
-  background-color: rgba(255, 255, 255, 0.07);
-}
 
 .btn--ghost:focus-visible {
   box-shadow: var(--shadow-focus);
@@ -696,9 +624,6 @@ a:hover { color: var(--color-primary-hover); }
   background-color: var(--neutral-200);
 }
 
-[data-theme="dark"] .btn--ghost:active:not(:disabled) {
-  background-color: rgba(255, 255, 255, 0.12);
-}
 
 .btn--ghost:disabled {
   color: var(--neutral-400);
@@ -749,11 +674,6 @@ a:hover { color: var(--color-primary-hover); }
   border: 1px solid var(--color-secondary-border);
 }
 
-[data-theme="dark"] .badge--highlight {
-  background-color: var(--color-secondary-subtle);
-  color: var(--color-secondary);
-  border-color: var(--color-secondary-border);
-}
 
 /* Badge com ícone de faísca/troféu — adicione via ::before se necessário */
 .badge--highlight::before {
@@ -769,11 +689,6 @@ a:hover { color: var(--color-primary-hover); }
   border: 1px solid rgba(34, 197, 94, 0.25);
 }
 
-[data-theme="dark"] .badge--success {
-  background-color: var(--color-success-bg);
-  color: var(--color-success);
-  border-color: rgba(74, 222, 128, 0.25);
-}
 
 /* — Badge informativo (prazo, condição) — */
 .badge--info {
@@ -782,11 +697,6 @@ a:hover { color: var(--color-primary-hover); }
   border: 1px solid rgba(59, 130, 246, 0.25);
 }
 
-[data-theme="dark"] .badge--info {
-  background-color: var(--color-info-bg);
-  color: var(--color-info);
-  border-color: rgba(96, 165, 250, 0.25);
-}
 
 /* — Badge alerta (prazo próximo, atenção) — */
 .badge--warning {
@@ -795,11 +705,6 @@ a:hover { color: var(--color-primary-hover); }
   border: 1px solid var(--amber-200);
 }
 
-[data-theme="dark"] .badge--warning {
-  background-color: rgba(255, 176, 26, 0.1);
-  color: var(--amber-300);
-  border-color: rgba(255, 176, 26, 0.25);
-}
 
 /* — Badge neutro — */
 .badge--neutral {
@@ -963,31 +868,6 @@ a:hover { color: var(--color-primary-hover); }
   color: var(--neutral-400);
 }
 
-/* Tema escuro — ajustes do input */
-[data-theme="dark"] .field__input {
-  background-color: var(--neutral-800);
-  border-color: var(--neutral-700);
-  color: var(--neutral-50);
-}
-
-[data-theme="dark"] .field__input:hover:not(:focus):not(:disabled):not([aria-invalid="true"]) {
-  border-color: var(--neutral-600);
-}
-
-[data-theme="dark"] .field__input:focus {
-  border-color: var(--color-primary);
-  background-color: var(--neutral-800);
-}
-
-[data-theme="dark"] .field--error .field__input {
-  background-color: var(--color-error-bg);
-}
-
-[data-theme="dark"] .field__input:disabled {
-  background-color: var(--neutral-900);
-  border-color: var(--neutral-800);
-  color: var(--neutral-600);
-}
 
 /* Ícone opcional dentro do input (direita) */
 .field__icon {
