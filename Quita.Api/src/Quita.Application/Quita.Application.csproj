@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Application conhece o Domain, nunca o contrário -->
+    <ProjectReference Include="..\Quita.Domain\Quita.Domain.csproj" />
+  </ItemGroup>
+</Project>
