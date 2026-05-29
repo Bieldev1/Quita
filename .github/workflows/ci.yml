@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # ── Frontend ─────────────────────────────────────────────────────────────────
+  frontend:
+    name: Frontend (Vue + Vite)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .   # raiz do repo
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npx vue-tsc --noEmit
+
+      - name: Build
+        run: npm run build
+        env:
+          # URL fictícia para o build de CI — não afeta funcionalidade
+          VITE_API_URL: https://quita-api.onrender.com
+
+  # ── Backend ──────────────────────────────────────────────────────────────────
+  backend:
+    name: Backend (.NET 8)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Quita.Api
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore -c Release
+
+      # Roda testes se existir projeto de testes na solution
+      - name: Test
+        run: |
+          if [ -f "../Quita.Tests/Quita.Tests.csproj" ]; then
+            dotnet test ../Quita.Tests/Quita.Tests.csproj --no-build -c Release --verbosity normal
+          else
+            echo "Nenhum projeto de testes encontrado — pulando."
+          fi

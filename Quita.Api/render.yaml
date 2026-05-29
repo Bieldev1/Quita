@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: quita-api
+    runtime: docker          # usa o Dockerfile — mais controle que o buildpack .NET nativo
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ASPNETCORE_URLS
+        value: http://+:8080  # Render roteia tráfego externo para a porta 8080
